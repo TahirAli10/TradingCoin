@@ -3,14 +3,7 @@ import React from 'react'
 export default function Header() {
   return (
     <>
-      <div class=" js- m-0 p-3 " style={{backgroundColor:"#E6007A"}}>
-     
-            <span class="small text-white text-center d-block mb-1">
-              Join Polkadot Decoded 2023 on June 28-29! 👉{" "}
-              <span class="text-underline">Register now</span>
-            </span>
-  
-        </div>
+ 
 
         <nav className="navbar navbar-expand-lg navbar-dark" data-sticky="top" style={{backgroundColor:"black"}} >
           <div className="container"> 
