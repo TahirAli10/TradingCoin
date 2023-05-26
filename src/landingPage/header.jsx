@@ -7,7 +7,7 @@ export default function Header() {
 
         <nav className="navbar navbar-expand-lg navbar-dark" data-sticky="top" style={{backgroundColor:"black"}} >
           <div className="container"> 
-            <a className="navbar-brand fade-page" href="index.html">
+            <a className="navbar-brand fade-page" >
             <h5 >
    
    <span>SLURPS</span>.<span>WORLD</span>
@@ -40,7 +40,6 @@ export default function Header() {
                 <ul className="navbar-nav">
                   <li className="nav-item">
                     <a
-                      href="parachains/index.html"
                       className="nav-link"
                       rel="noopener"
                     >
@@ -49,7 +48,6 @@ export default function Header() {
                   </li>
                   <li className="nav-item">
                     <a
-                      href="auctions/index.html"
                       className="nav-link"
                       rel="noopener"
                     >
@@ -58,7 +56,6 @@ export default function Header() {
                   </li>
                   <li className="nav-item">
                     <a
-                      href="https://guide.kusama.network/"
                       className="nav-link"
                       target="_blank"
                       rel="nofollow noopener noreferrer"
@@ -68,7 +65,6 @@ export default function Header() {
                   </li>
                   <li className="nav-item">
                     <a
-                      href="https://guide.kusama.network/docs/kusama-claims/"
                       className="nav-link"
                       target="_blank"
                       rel="nofollow noopener noreferrer"
@@ -78,7 +74,6 @@ export default function Header() {
                   </li>
                   <li className="nav-item">
                     <a
-                      href="https://polkadot.network/tag/kusama/"
                       className="nav-link"
                       target="_blank"
                       rel="nofollow noopener noreferrer"
@@ -88,7 +83,6 @@ export default function Header() {
                   </li>
                   <li className="nav-item nav-item--social">
                     <a
-                      href="https://twitter.com/kusamanetwork"
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                       className="nav-link"
@@ -107,7 +101,6 @@ export default function Header() {
                   </li>
                   <li className="nav-item nav-item--social">
                     <a
-                      href="https://kusa.ma/discord"
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                       className="nav-link"
@@ -125,13 +118,13 @@ export default function Header() {
                   </li>
                   <li className="nav-item nav-item--social">
                     <a
-                      href="https://github.com/paritytech/polkadot/"
+                    
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                       className="nav-link"
                     >
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
+                        
                         role="img"
                         viewBox="0 0 32.58 31.77"
                         className="icon undefined"
@@ -142,11 +135,9 @@ export default function Header() {
                       </svg>
                     </a>
                   </li>
-                </ul>
-              </div>
-            </div>
-            <a
-              href="https://www.substrate.io/"
+                  <li className="nav-item nav-item--social">
+              
+                        <a
               target="_blank"
               rel="nofollow noopener noreferrer"
               className="btn  ml-lg-3 startButton"
@@ -154,6 +145,12 @@ export default function Header() {
             >
               Start Building
             </a>
+                  
+                  </li>
+                </ul>
+              </div>
+            </div>
+       
           </div>
         </nav>
 
