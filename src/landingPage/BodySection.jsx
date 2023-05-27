@@ -27,7 +27,7 @@ export default function BodySection() {
         setVantaEffect(
           NET({
             el: myRef.current,
-            color: 0xE6007A,
+            color: 0x39FF14,
             backgroundColor: 0x000000,
             points: points,
             maxDistance: maxDistance,
@@ -40,22 +40,73 @@ export default function BodySection() {
       handleResize();
     };
 
-    handleResize(); // Initial setup
+    handleResize(); 
 
-    window.addEventListener('resize', handleWindowResize); // Update on window resize
+    window.addEventListener('resize', handleWindowResize); 
 
     return () => {
       if (vantaEffect) vantaEffect.destroy();
-      window.removeEventListener('resize', handleWindowResize); // Clean up the event listener
+      window.removeEventListener('resize', handleWindowResize);
     };
   }, [vantaEffect]);
 
   return (
-    <h1
-      ref={myRef}
-      style={{ height: '700px', textAlign: 'center', paddingTop: '15%', color: 'white' }}
+    <div
+      style={{
+        width: '100%',
+        height: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+        overflow: 'hidden', 
+      }}
     >
-      <span>SLURPS</span>.<span>WORLD</span>
-    </h1>
+      <div
+        ref={myRef}
+        style={{
+          width: '100%',
+          height: '700px',
+          position: 'relative',
+        }}
+      >
+        <h1
+          style={{
+            width: '100%',
+            height: '100%',
+            textAlign: 'center',
+            paddingTop: '15%',
+            color: 'white',
+          }}
+        >
+          <span style={{color:"#39FF14"}}>SLURPS</span>.<span>WORLD</span>
+        </h1>
+        <div
+          style={{
+            position: 'absolute',
+            bottom: '-11px',
+            left: '0',
+            right: '0',
+            height: '60px',
+            backgroundImage:
+            'linear-gradient(from top to bottom, blur(2px) 0%,  blur(2px) 50%, rgba(0, 0, 8, 0.7) 100%)',
+            backdropFilter:"    blur(5px)",
+            zIndex: '2',
+          }}
+        />
+      </div>
+        <div
+          style={{
+            position: 'absolute',
+            top: '57px',
+            left: '0',
+            right: '0',
+            height: '40px',
+            backgroundImage:
+            'linear-gradient(from top to bottom, blur(2px) 0%,  blur(2px) 50%, rgba(0, 0, 8, 0.7) 100%)',
+            backdropFilter:"    blur(5px)",
+            zIndex: '2',
+          }}
+        />
+      </div>
+
   );
 }
