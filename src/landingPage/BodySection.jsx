@@ -93,19 +93,8 @@ export default function BodySection() {
           }}
         />
       </div>
-        <div
-          style={{
-            position: 'absolute',
-            top: '57px',
-            left: '0',
-            right: '0',
-            height: '40px',
-            backgroundImage:
-            'linear-gradient(from top to bottom, blur(2px) 0%,  blur(2px) 50%, rgba(0, 0, 8, 0.7) 100%)',
-            backdropFilter:"    blur(5px)",
-            zIndex: '2',
-          }}
-        />
+
+       
       </div>
 
   );

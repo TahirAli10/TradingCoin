@@ -90,8 +90,51 @@ h5:hover span {
 }
 
 
-
-
+.Footer{
+  text-align:center; 
+  display:flex;
+   justify-content:center;
+    align-items:center;
+}
+.SubFooter{
+text-transform: none;
+    color: #dbdbdb;
+    letter-spacing: -0.04em;
+    font-family: YADSwGZbFSo-0;
+    line-height: 1.38985628em;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    font-synthesis: none;
+    font-kerning: none;
+    font-variant-ligatures: none;
+    font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+    font-family: unset;
+    text-rendering: geometricprecision;
+    white-space: normal;
+    width: 70%;
+    margin-top: 150px;
+}
+.Footertitle{
+text-transform: none;
+    color: #dbdbdb;
+    letter-spacing: -0.04em;
+    font-family: YADSwGZbFSo-0;
+    line-height: 1.38985628em;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    font-synthesis: none;
+    font-kerning: none;
+    font-variant-ligatures: none;
+    font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+    font-family: unset;
+    text-rendering: geometricprecision;
+    white-space: normal;
+    width: 70%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 
 
 @media only screen and(max-width:700px) {

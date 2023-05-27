@@ -16,13 +16,13 @@ export default function Testamonial() {
   return (
     <div className='d-flex justify-content-center' style={{ display: 'flex' }}>
       <div className='d-flex justify-content-center' data-aos='fade-left' data-aos-delay='200'>
-        <img src={shirt1} alt='' style={{ cursor: 'pointer', width: '90%' }} />
+        <img src={shirt1} alt='' style={{ cursor: 'pointer', width: '90%', minHeight:"400px" }} />
       </div>
       <div className='d-flex justify-content-center' data-aos='fade-right' data-aos-delay='400'>
-        <img src={shirt2} alt='' style={{ cursor: 'pointer', width: '90%' }} />
+        <img src={shirt2} alt='' style={{ cursor: 'pointer', width: '90%' , minHeight:"400px" }} />
       </div>
       <div className='d-flex justify-content-center' data-aos='fade-left' data-aos-delay='600'>
-        <img src={shirt3} alt='' style={{ cursor: 'pointer', width: '90%' }} />
+        <img src={shirt3} alt='' style={{ cursor: 'pointer', width: '90%', minHeight:"400px" }} />
       </div>
     </div>
   );
