@@ -5,7 +5,7 @@ import rolls from "../../assests/images/slurp rolls.jpg";
 export default function Advertisement() {
   return (
     <>
-      <div className="container">
+      <div className="container my-5" >
         <div className="row d-flex justify-content-between">
           <div className="col-lg-4 col-12 d-flex justify-content-between">
             <img

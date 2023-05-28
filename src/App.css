@@ -2,7 +2,33 @@ body{
   background-color: rgb(0, 0, 0) !important;
   overflow-x: hidden;
 }
+.SlurpsLogo{
+  display: flex;
+  justify-content: center;
+ margin:50px 0px;
+}
+.sluprs{
+  text-decoration-line: underline;
+  color: #aeff46;
+  pointer-events: all;
+  
+  line-height: 1.39319818em;
+  text-align: center;
+  font-size: calc(7.72093704em );
+ font-weight: 900
+}
+.slurpsShop{
+ color: white !important;
+ 
+ text-decoration-line: underline;
 
+ pointer-events: all;
+ 
+ line-height: 1.39319818em;
+ text-align: center;
+ font-size: calc(7.72093704em );
+font-weight: 900
+}
 /* Products */
 @import url("https://fonts.googleapis.com/css2?family=Corben:wght@700&display=swap");
 
@@ -54,14 +80,14 @@ body {
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 1rem;
-
+  transition: max-width .7s ease-in-out, border-radius .7s ease-in-out;
 }
+
 .marquee__group img:hover {
   max-width: clamp(30rem, 1rem + 28vmin, 20rem);
-  transition: all .8s ease-in-out ;
-  transition: all .8s ease-out ;
-
+  border-radius: 2rem;
 }
+
 
 .marquee__group p {
   background-image: linear-gradient(
@@ -257,7 +283,7 @@ text-transform: none;
   background-position: center;
   background-size: cover;
   background-repeat: none;
-  transition: flex 0.8s ease;
+  
   
   
   &:hover{

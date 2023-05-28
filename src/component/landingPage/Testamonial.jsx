@@ -3,8 +3,15 @@ import React from 'react'
 export default function Testamonial() {
   return (
     <>
-     <div className="container mt-5">
-   
+
+
+     <div className="container " >
+    <div className='SlurpsLogo'>
+      <div className='sluprs'>slurps</div>
+      <div className='slurpsShop'>.shop</div>
+    </div>
+
+
       <div className="gallery-wrap">
         <div className="item item-1"></div>
         <div className="item item-2"></div>

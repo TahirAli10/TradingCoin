@@ -58,7 +58,7 @@ export default function BodySection() {
         display: 'flex',
         justifyContent: 'center',
         overflow: 'hidden', 
-        marginBottom:"150px"
+        marginBottom:"100px"
       }}
     >
       <div
