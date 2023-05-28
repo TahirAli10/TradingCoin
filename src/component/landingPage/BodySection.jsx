@@ -17,10 +17,10 @@ export default function BodySection() {
         maxDistance = 20;
       } else if (width >= 768 && width < 1024) {
         points = 10;
-        maxDistance = 25;
+        maxDistance = 20;
       } else {
-        points = 15;
-        maxDistance = 30;
+        points = 10;
+        maxDistance = 20;
       }
 
       if (!vantaEffect) {
@@ -58,6 +58,7 @@ export default function BodySection() {
         display: 'flex',
         justifyContent: 'center',
         overflow: 'hidden', 
+        marginBottom:"150px"
       }}
     >
       <div

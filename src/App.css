@@ -54,6 +54,13 @@ body {
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 1rem;
+
+}
+.marquee__group img:hover {
+  max-width: clamp(30rem, 1rem + 28vmin, 20rem);
+  transition: all .8s ease-in-out ;
+  transition: all .8s ease-out ;
+
 }
 
 .marquee__group p {
@@ -192,13 +199,12 @@ h5:hover span {
     align-items:center;
 }
 .SubFooter{
-text-transform: none;
-    color: #dbdbdb;
+    color: white;
     letter-spacing: -0.04em;
     font-family: YADSwGZbFSo-0;
     line-height: 1.38985628em;
     text-align: center;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 400;
     font-synthesis: none;
     font-kerning: none;
@@ -236,14 +242,6 @@ text-transform: none;
 
 
 
-h2{
-  position: relative;
-  margin-bottom: 45px;
-  font-family: 'Oswald', sans-serif;
-  font-size: 44px;
-  text-transform: uppercase;
-  color: #424242;
-}
 
 .gallery-wrap {
   display: flex;
@@ -345,4 +343,10 @@ h2{
   .TestamonielShirt3{
     margin-left: -20px !important;
   }
+  .SubFooter{
+
+    width: 90%;
+    
+    
+}
 }
