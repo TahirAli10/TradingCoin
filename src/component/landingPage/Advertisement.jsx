@@ -1,7 +1,7 @@
 import React from "react";
-import glass from "../assests/images/slurp glass.png";
-import logo from "../assests/images/slurp logo.png";
-import rolls from "../assests/images/slurp rolls.jpg";
+import glass from "../../assests/images/slurp glass.png";
+import logo from "../../assests/images/slurp logo.png";
+import rolls from "../../assests/images/slurp rolls.jpg";
 export default function Advertisement() {
   return (
     <>

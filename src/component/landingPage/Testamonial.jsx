@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import shirt1 from "../assests/images/shirt1.png";
-import shirt2 from "../assests/images/shirt2.png";
-import shirt3 from "../assests/images/shirt3.png";
+import shirt1 from "../../assests/images/shirt1.png";
+import shirt2 from "../../assests/images/shirt2.png";
+import shirt3 from "../../assests/images/shirt3.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -14,7 +14,7 @@ export default function Testamonial() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container mt-5">
       <div className="row">
         <div
           className="col-sm-12 col-lg-4 "
@@ -35,6 +35,7 @@ export default function Testamonial() {
           <img
             src={shirt3}
             alt=""
+            className="TestamonielShirt3"
             style={{
               cursor: "pointer",
               width: "550px",
@@ -52,6 +53,7 @@ export default function Testamonial() {
           <img
             src={shirt1}
             alt=" "
+            className="TestamonielShirt1"
             style={{
               cursor: "pointer",
               width: "500px",

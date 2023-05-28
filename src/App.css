@@ -1,7 +1,104 @@
 body{
   background-color: rgb(0, 0, 0) !important;
-  overflow-x: hiddena;
+  overflow-x: hidden;
 }
+
+/* Products */
+@import url("https://fonts.googleapis.com/css2?family=Corben:wght@700&display=swap");
+
+
+
+
+body {
+  --space: 6rem;
+
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  overflow: auto;
+  gap: var(--space);
+
+  font-family: "Corben", system-ui, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  background:#000000;
+}
+
+.marquee {
+  --duration: 30s;
+  --gap: var(--space);
+
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  transform: skewY(-3deg);
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll var(--duration) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    animation-play-state: paused;
+  }
+}
+
+.marquee__group img {
+  max-width: clamp(10rem, 1rem + 28vmin, 20rem);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.marquee__group p {
+  background-image: linear-gradient(
+    75deg,
+    hsl(240deg 70% 49%) 0%,
+    hsl(253deg 70% 49%) 11%,
+    hsl(267deg 70% 49%) 22%,
+    hsl(280deg 71% 48%) 33%,
+    hsl(293deg 71% 48%) 44%,
+    hsl(307deg 71% 48%) 56%,
+    hsl(320deg 71% 48%) 67%,
+    hsl(333deg 72% 48%) 78%,
+    hsl(347deg 72% 48%) 89%,
+    hsl(0deg 73% 47%) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.marquee--borders {
+  border-block: 3px solid dodgerblue;
+  padding-block: 0.75rem;
+}
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: calc(var(--duration) / -2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+
+
+
 /* Base */
 
 h1 {
@@ -112,8 +209,9 @@ text-transform: none;
     font-family: unset;
     text-rendering: geometricprecision;
     white-space: normal;
-    width: 70%;
+    width: 40%;
     margin-top: 150px;
+    padding: 0px 50px;
 }
 .Footertitle{
 text-transform: none;
@@ -145,6 +243,7 @@ text-transform: none;
     padding:0px;
     overflow-x: hidden !important;
   }
+
 }
 
 @media screen and (max-width: 900px) and (min-width: 450px) {
@@ -173,5 +272,12 @@ text-transform: none;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+  }
+  .TestamonielShirt1{
+    margin-left: 0px !important;
+  }
+  
+  .TestamonielShirt3{
+    margin-left: -20px !important;
   }
 }

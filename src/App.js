@@ -1,16 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './landingPage/header';
-import BodySection from './landingPage/BodySection';
-import Testamonial from './landingPage/Testamonial';
-import Advertisement from './landingPage/Advertisement';
-import Footer from './landingPage/Footer';
+import Header from './component/landingPage/header';
+import BodySection from './component/landingPage/BodySection';
+import Testamonial from './component/landingPage/Testamonial';
+import Advertisement from './component/landingPage/Advertisement';
+import Footer from './component/landingPage/Footer';
+import Products from './component/landingPage/Products';
 function App() {
   return (
     <>
 <Header />  
 <BodySection />
 <Testamonial />
+<Products />
 <Advertisement />
 <Footer />
 </>

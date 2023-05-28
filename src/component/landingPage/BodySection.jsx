@@ -54,7 +54,7 @@ export default function BodySection() {
     <div
       style={{
         width: '100%',
-        height: '100%',
+    
         display: 'flex',
         justifyContent: 'center',
         overflow: 'hidden', 
@@ -73,7 +73,7 @@ export default function BodySection() {
             width: '100%',
             height: '100%',
             textAlign: 'center',
-            paddingTop: '15%',
+            paddingTop: '7%',
             color: 'white',
           }}
         >
