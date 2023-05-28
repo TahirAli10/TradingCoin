@@ -1,68 +1,19 @@
-import React, { useEffect } from "react";
-import shirt1 from "../../assests/images/shirt1.png";
-import shirt2 from "../../assests/images/shirt2.png";
-import shirt3 from "../../assests/images/shirt3.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from 'react'
 
 export default function Testamonial() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Set the duration of the animation
-      once: true, // Only animate elements once
-    });
-  }, []);
-
   return (
-    <div className="container mt-5">
-      <div className="row">
-        <div
-          className="col-sm-12 col-lg-4 "
-          data-aos="fade-left"
-          data-aos-delay="200"
-        >
-          <img
-            src={shirt2}
-            alt=""
-            style={{ cursor: "pointer", width: "500px", height: "500px" }}
-          />
-        </div>
-        <div
-          className="col-sm-12 col-lg-4 "
-          data-aos="fade-right"
-          data-aos-delay="400"
-        >
-          <img
-            src={shirt3}
-            alt=""
-            className="TestamonielShirt3"
-            style={{
-              cursor: "pointer",
-              width: "550px",
-              height: "550px",
-              marginTop: "-40px",
-              marginLeft: "-40px",
-            }}
-          />
-        </div>
-        <div
-          className="col-sm-12 col-lg-4 "
-          data-aos="fade-left"
-          data-aos-delay="600"
-        >
-          <img
-            src={shirt1}
-            alt=" "
-            className="TestamonielShirt1"
-            style={{
-              cursor: "pointer",
-              width: "500px",
-              height: "500px",
-              marginLeft: "-40px",
-            }}
-          />
-        </div>
+    <>
+     <div className="container mt-5">
+   
+      <div className="gallery-wrap">
+        <div className="item item-1"></div>
+        <div className="item item-2"></div>
+        <div className="item item-3"></div>
+        <div className="item item-4"></div>
+        <div className="item item-5"></div>
+        <div className="item item-6"></div>
       </div>
     </div>
-  );
+    </>
+  )
 }

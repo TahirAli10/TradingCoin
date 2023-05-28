@@ -5,7 +5,7 @@ import shirt3 from "../../assests/images/shirt3.png";
 export default function Products() {
   return (
     <>
-      <div className="marquee marquee--borders " style={{ '--duration': '100s' }}></div>
+      <div className="marquee marquee--borders mt-5 " style={{ '--duration': '100s' }}></div>
 
       <div className="marquee">
         <div className="marquee__group">
