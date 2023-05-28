@@ -2,28 +2,43 @@ import React from 'react';
 import shirt1 from "../../assests/images/shirt1.png";
 import shirt2 from "../../assests/images/shirt2.png";
 import shirt3 from "../../assests/images/shirt3.png";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
 export default function Products() {
+  var settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrow: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+  };
+
   return (
-    <>
-      <div className="marquee marquee--borders mt-5 " style={{ '--duration': '100s' }}></div>
-
-      <div className="marquee">
-        <div className="marquee__group">
-          <img key={1} src={shirt1} alt="Product 1" />
-          <img key={2} src={shirt2} alt="Product 2" />
-          <img key={3} src={shirt3} alt="Product 3" />
-       
-       </div>
-
-        <div aria-hidden="true" className="marquee__group">
-        <img key={1} src={shirt1} alt="Product 1" />
-          <img key={2} src={shirt2} alt="Product 2" />
-          <img key={3} src={shirt3} alt="Product 3" />
-  </div>
-      </div>
-
-      <div className="marquee marquee--borders" style={{ '--duration': '100s' }}></div>
-    </>
+    <div className='container'>
+      <Slider {...settings}>
+        <div style={{ display: "flex", justifyContent: 'center' }}>
+          <img src={shirt1} className='testamonialShrits' style={{margin:"0 auto"}} />
+        </div>
+        <div style={{ display: "flex", justifyContent: 'center' }}>
+          <img src={shirt2} className='testamonialShrits' style={{margin:"0 auto"}} />
+        </div>
+        <div style={{ display: "flex", justifyContent: 'center' }}>
+          <img src={shirt3} className='testamonialShrits' style={{margin:"0 auto"}} />
+        </div>
+        <div style={{ display: "flex", justifyContent: 'center' }}>
+          <img src={shirt1} className='testamonialShrits' style={{margin:"0 auto"}} />
+        </div>
+        <div style={{ display: "flex", justifyContent: 'center' }}>
+          <img src={shirt2} className='testamonialShrits' style={{margin:"0 auto"}} />
+        </div>
+        <div style={{ display: "flex", justifyContent: 'center' }}>
+          <img src={shirt3} className='testamonialShrits' style={{margin:"0 auto"}} />
+        </div>
+      </Slider>
+    </div>
   );
 }
-

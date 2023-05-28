@@ -11,17 +11,7 @@ export default function BodySection() {
 
       let points, maxDistance;
 
-      // Set different values based on screen width
-      if (width < 768) {
-        points = 7;
-        maxDistance = 20;
-      } else if (width >= 768 && width < 1024) {
-        points = 10;
-        maxDistance = 20;
-      } else {
-        points = 10;
-        maxDistance = 20;
-      }
+  
 
       if (!vantaEffect) {
         setVantaEffect(
@@ -29,8 +19,8 @@ export default function BodySection() {
             el: myRef.current,
             color: 0x39FF14,
             backgroundColor: 0x000000,
-            points: points,
-            maxDistance: maxDistance,
+            points: 4,
+            maxDistance: 20,
           })
         );
       }

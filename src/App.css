@@ -2,6 +2,33 @@ body{
   background-color: rgb(0, 0, 0) !important;
   overflow-x: hidden;
 }
+.testamonialShrits {
+  width: 200px !important;
+  transition: width 0.9s ease-in-out;
+}
+
+.testamonialShrits:hover {
+  width: 250px !important;
+ 
+}
+
+.testaminial{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.testaminial  img{
+  width: 150px;
+  height: 200px;
+}
+.testaminial div{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px !important;
+}
+
 .SlurpsLogo{
   display: flex;
   justify-content: center;
@@ -14,7 +41,7 @@ body{
   
   line-height: 1.39319818em;
   text-align: center;
-  font-size: calc(7.72093704em );
+  font-size: calc(3.72093704em );
  font-weight: 900
 }
 .slurpsShop{
@@ -26,7 +53,7 @@ body{
  
  line-height: 1.39319818em;
  text-align: center;
- font-size: calc(7.72093704em );
+ font-size: calc(3.72093704em );
 font-weight: 900
 }
 /* Products */
